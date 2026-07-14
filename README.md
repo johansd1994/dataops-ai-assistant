@@ -47,3 +47,142 @@ Ejemplos:
 ---
 
 # 🏗 Arquitectura
+
+Usuario
+│
+▼
+React Frontend
+│
+▼
+FastAPI Backend
+│
+▼
+Claude Sonnet 4 (Amazon Bedrock)
+│
+├───────────────┐
+│ │
+▼ ▼
+Athena Tool S3 Tool
+│ │
+▼ ▼
+Amazon Athena Amazon S3
+
+
+La arquitectura sigue un enfoque **Agent + Tool Calling**, donde el modelo decide cuándo utilizar una herramienta y cuándo responder directamente.
+
+---
+
+# ✨ Características
+
+✅ Chat conversacional
+
+✅ Selección automática de herramientas
+
+✅ Consultas SQL sobre Athena
+
+✅ Exploración de archivos en Amazon S3
+
+✅ Memoria conversacional
+
+✅ Prompts especializados
+
+✅ Frontend React
+
+✅ Backend FastAPI
+
+✅ Arquitectura modular
+
+✅ Preparado para RAG
+
+---
+
+# 🧠 Arquitectura Agéntica
+DataOpsAgent
+
+│
+
+├── Prompt Service
+
+├── Conversation Memory
+
+├── Tool Selector
+
+│
+
+├── Athena Tool
+
+│ └── Athena Repository
+
+│
+
+└── S3 Tool
+
+└── S3 Repository
+
+
+Cada componente tiene una responsabilidad única siguiendo principios SOLID.
+
+---
+
+# 📂 Estructura del Proyecto
+
+app/
+
+├── agents/
+
+│ ├── dataops_agent.py
+
+│ ├── tool_selector.py
+
+│ └── tools/
+
+│
+
+├── api/
+
+├── core/
+
+├── infrastructure/
+
+│ ├── aws/
+
+│ │ ├── clients/
+
+│ │ └── repositories/
+
+│
+
+├── memory/
+
+├── prompts/
+
+├── services/
+
+└── models/
+
+frontend/
+
+Documents/
+
+scripts/
+
+logs/
+
+
+---
+
+# ⚙ Tecnologías
+
+| Tecnología | Uso |
+|------------|------|
+| Python 3.12 | Backend |
+| FastAPI | API REST |
+| React | Frontend |
+| AWS Bedrock | Inferencia LLM |
+| Claude Sonnet 4 | Modelo de lenguaje |
+| Amazon Athena | Consulta SQL |
+| Amazon S3 | Exploración de datasets |
+| Boto3 | SDK AWS |
+| Vite | Frontend |
+
+
