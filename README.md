@@ -64,11 +64,11 @@ FastAPI Backend
 Claude Sonnet 4 (Amazon Bedrock)
 │
 ├───────────────┐
-│ │
-▼ ▼
+│               │
+▼               ▼
 Athena Tool S3 Tool
-│ │
-▼ ▼
+│                 │
+▼                 ▼
 Amazon Athena Amazon S3
 
 
