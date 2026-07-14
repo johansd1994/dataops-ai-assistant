@@ -52,24 +52,9 @@ Ejemplos:
     <img src="Documents/Imagen Arquitectura.png" width="500">
 </p>
 
-Usuario
-│
-▼
-React Frontend
-│
-▼
-FastAPI Backend
-│
-▼
-Claude Sonnet 4 (Amazon Bedrock)
-│
-├───────────────┐
-│               │
-▼               ▼
-Athena Tool S3 Tool
-│                 │
-▼                 ▼
-Amazon Athena Amazon S3
+<p align="center">
+    <img src="Documents/diagrama.png" width="300">
+</p>
 
 
 La arquitectura sigue un enfoque **Agent + Tool Calling**, donde el modelo decide cuándo utilizar una herramienta y cuándo responder directamente.
