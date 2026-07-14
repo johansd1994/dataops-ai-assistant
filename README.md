@@ -48,6 +48,10 @@ Ejemplos:
 
 # 🏗 Arquitectura
 
+<p align="center">
+    <img src="Documents/Imagen Arquitectura.png" width="1000">
+</p>
+
 Usuario
 │
 ▼
