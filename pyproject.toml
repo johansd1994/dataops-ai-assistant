@@ -1,0 +1,13 @@
+[project]
+name = "dataops-ai-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "boto3>=1.37.38",
+    "fastapi>=0.124.4",
+    "loguru>=0.7.3",
+    "pydantic-settings>=2.8.1",
+    "uvicorn>=0.33.0",
+]
