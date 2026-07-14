@@ -1,205 +1,49 @@
 # 🤖 DataOps AI Assistant
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.116-green)
-![React](https://img.shields.io/badge/React-19-blue)
-![AWS](https://img.shields.io/badge/AWS-Bedrock-orange)
-![Claude](https://img.shields.io/badge/Claude-Sonnet_4-purple)
+<p align="center">
 
-![CI](https://github.com/USUARIO/dataops-ai-assistant/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![AWS](https://img.shields.io/badge/AWS-Bedrock%20%7C%20Athena%20%7C%20S3-orange?logo=amazonaws)
+![Claude](https://img.shields.io/badge/Claude-Sonnet%204-blueviolet)
+![License](https://img.shields.io/badge/Status-Technical%20Assessment-success)
 
----
-
-# Descripción
-
-DataOps AI Assistant es un asistente conversacional desarrollado con Amazon Bedrock y Claude Sonnet que permite consultar información almacenada en Amazon Athena y Amazon S3 utilizando lenguaje natural.
-
-El proyecto implementa una arquitectura basada en herramientas (Tools), donde el modelo de lenguaje interpreta la intención del usuario y decide cuándo utilizar servicios AWS para responder consultas.
+</p>
 
 ---
 
-# Características
+## 🚀 Descripción
 
-- Frontend desarrollado en React
-- Backend desarrollado en FastAPI
-- Amazon Bedrock (Claude Sonnet)
+**DataOps AI Assistant** es un asistente conversacional construido sobre una arquitectura agéntica que permite consultar información almacenada en AWS utilizando lenguaje natural.
+
+El sistema interpreta la intención del usuario, selecciona automáticamente la herramienta adecuada y genera respuestas enriquecidas utilizando **Claude Sonnet 4** ejecutándose sobre **Amazon Bedrock**.
+
+El asistente está diseñado para facilitar la exploración de datos empresariales almacenados en:
+
 - Amazon Athena
 - Amazon S3
-- Tool Router
-- Conversation Memory
-- Respuestas en Markdown
-- Swagger UI
-- Arquitectura desacoplada
+- Data Catalog
+- Documentación técnica
+
+sin necesidad de escribir consultas SQL o navegar manualmente por la infraestructura AWS.
 
 ---
 
-# Arquitectura
+# 🎯 Objetivo
 
-Usuario
+Reducir la complejidad del acceso a la información permitiendo que cualquier usuario consulte datos mediante preguntas en lenguaje natural.
 
-↓
+Ejemplos:
 
-Frontend React
+> ¿Qué tablas existen en Athena?
 
-↓
+> Muéstrame los primeros registros de employees
 
-FastAPI
+> ¿Cuántos archivos CSV tengo en el bucket?
 
-↓
-
-DataOps Agent
-
-↓
-
-Tool Router
-
-↓
-
-Athena Tool / S3 Tool
-
-↓
-
-AWS Bedrock
-
-↓
-
-Amazon Athena / Amazon S3
+> ¿Qué datasets existen en Bronze?
 
 ---
 
-# Tecnologías utilizadas
-
-Backend
-
-- Python 3.12
-- FastAPI
-- Uvicorn
-- Boto3
-- Pydantic Settings
-
-Frontend
-
-- React
-- Vite
-- Axios
-- React Markdown
-
-Cloud
-
-- Amazon Bedrock
-- Claude Sonnet
-- Amazon Athena
-- Amazon S3
-- IAM
-
----
-
-# Instalación
-
-## Clonar el proyecto
-
-git clone ...
-
----
-
-## Backend
-
-Crear entorno virtual
-
-python -m venv .venv
-
-Activar entorno
-
-Windows
-
-.venv\Scripts\activate
-
-Linux
-
-source .venv/bin/activate
-
-Instalar dependencias
-
-pip install -r requirements.txt
-
-Ejecutar
-
-uvicorn main:app --reload
-
----
-
-## Frontend
-
-cd frontend
-
-npm install
-
-npm run dev
-
----
-
-# Variables de entorno
-
-Crear archivo .env
-
-AWS_REGION=
-
-BEDROCK_MODEL_ID=
-
-BEDROCK_INFERENCE_PROFILE_ID=
-
-ATHENA_DATABASE=
-
-ATHENA_OUTPUT_LOCATION=
-
-ATHENA_WORKGROUP=
-
-S3_BUCKET=
-
-AWS_ACCESS_KEY_ID=
-
-AWS_SECRET_ACCESS_KEY=
-
----
-
-# API
-
-POST
-
-/api/v1/chat
-
-Ejemplo
-
-{
-    "message":"¿Qué tablas tengo en Athena?"
-}
-
----
-
-# Ejemplos
-
-¿Qué tablas tengo?
-
-Muéstrame los registros de employees
-
-¿Cuántos CSV tengo?
-
-¿Qué archivos existen en S3?
-
----
-
-# Próximas mejoras
-
-- Agente Juez
-- Sistema RAG
-- Observabilidad con CloudWatch
-- Dashboard
-- Docker Compose
-- ECS
-- CI/CD
-
----
-
-# Autor
-
-Johan Mauricio Suarez Daza
+# 🏗 Arquitectura
